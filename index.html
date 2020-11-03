@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Сетка-->
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<!--Carousel-->
+	<link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.css" />
+	<!--Иконки-->
+	<script src="https://kit.fontawesome.com/44911a6d9e.js" crossorigin="anonymous"></script>
+	<!--My style-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicons.ico" />
+	<title>Jewelry</title>
+</head>
+
+<body>
+
+	<!--Шапка-->
+	<header>
+		<div class="container">
+			<div class="row flex_header">
+				<div class="col-6 col-sm-5 col-md-3 col-lg-2 col-xl-3">
+					<div class="logo_header">
+						<a href="#">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-lg-3 col-xl-3">
+					<p class="text_header">
+						Производство и продажа
+						ювелирных изделий
+					</p>
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-3 col-lg-4 col-xl-3 inform_header">
+					<a class="tel_header" href="tel:+74951234567">096-008-53-57</a>
+				</div>
+
+				<div class="col-md-3 col-lg-3 col-xl-3 header_title_wrap">
+					<a class="title_header" href="#" data-modal="#jewelry">Давайте мы перезвоним</a>
+				</div>
+
+				<!--Бургер-->
+				<button class="burger_menu" id="burger_menu">
+					<span class="burger_item"></span>
+				</button>
+
+				<ul class="burger-menu-list" id="menu-list">
+					<li><a class="tel_header" href="tel:+74951234567">096-008-53-57</a></li>
+					<li><a href="mailto:tmdiamantjewelry@gmail.com">tmdiamantjewelry@gmail.com</a></li>
+					<li><a class="burger-menu__btn" href="#" data-modal="#jewelry">Давайте мы перезвоним</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+
+	<!--Intro-->
+	<div class="intro_woman">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-11 col-md-8 col-lg-7 col-xl-7">
+					<h1 class="title_intro">
+						Ювелирные украшения<br>
+						с гарантией подлинности<br> металлов и камней
+					</h1>
+
+					<ul class="intro_list">
+						<li>Более 3 000 моделей собственного дизайна</li>
+						<li>Только драгоценные и полудрагоценные камни</li>
+						<li>Изделия из золота 585,750 и серебра 925 проб</li>
+						<li>Украшения под заказ от 2 недель</li>
+					</ul>
+
+					<a class="intro_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог продукции</a>
+					<a class="intro_btn" href="#" data-modal="#jewelry">Хочу украшение под заказ</a>
+				</div>
+
+				<!--Intro-modal-фотокаталог-->
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 intro-forma" id="fhotocatalog">
+					<form class="popup-wrapper__forma">
+						<div class="stock-right__title">Заполните форму,</div>
+						<p class="stock-right__text">чтобы получить фотокаталог продукции на Вашу почту уже через 5 минут</p>
+						<input type="hidden" name="title" value="Форма фотокаталога">
+						<input class="stock-right__input" type="text" placeholder="Ваше имя">
+						<input class="stock-right__input" type="email" placeholder="Ваш e-mail" required>
+						<input class="stock-right__input" type="tel" placeholder="Ваш телефон" required>
+						<button class="stock-right__btn">Получить прайс</button>
+
+						<a class="site-cross_btn" href="#" data-close>X</a>
+					</form>
+				</div>
+
+				<!--Intro-modal-украшение под заказ-->
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 intro-forma" id="jewelry">
+					<form class="popup-wrapper__forma">
+						<div class="stock-right__title">Заполните форму,</div>
+						<p class="stock-right__text">и наш менеджер свяжется с Вами для консультации по изготовлению украшения под заказ</p>
+
+						<input type="hidden" name="title" value="Форма украшение под заказ">
+						<input class="stock-right__input" type="text" placeholder="Ваше имя">
+						<input class="stock-right__input" type="email" placeholder="Ваш e-mail" required>
+						<input class="stock-right__input" type="tel" placeholder="Ваш телефон" required>
+						<button class="stock-right__btn">Получить консультацию</button>
+
+						<a class="site-cross_btn" href="#" data-close>X</a>
+					</form>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<!--Ювелирный магазин «Диамант»-->
+	<section class="Jewelry">
+		<div class="container">
+			<h2 class="title_site jewelry_title">
+				Ювелирный магазин «Диамант» — <br>
+				это гарантия подлинности и качества изделий
+			</h2>
+
+			<div class="row media-jewelry">
+				<div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-7 jewerlry-wrapper">
+					<div class="jewelry-content">
+						<h3 class="jewelry-content__title">Подлинный металл и качественное исполнение</h3>
+
+						<p class="jewelry-content__text">
+							Используем банковское золото для производства изделий
+							с 585, 750 пробой золота и серебро 925, а камни только высшего качества. Камни сидят прочно, так как наши ювелиры с 20-летним стажем продумывают дизайн до мелочей и точно исполняют его.</p>
+					</div>
+				</div>
+
+				<div class="col-11 col-sm-9 col-md-5 col-lg-5 col-xl-5 jewelry-img">
+					<img src="images/Jewelry/img3.png" alt="img3">
+				</div>
+			</div>
+
+			<div class="row media-jewelry jewelry-reverse">
+				<div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-7 jewerlry-wrapper">
+					<div class="jewelry-content">
+						<h3 class="jewelry-content__title">Подлинный металл и качественное исполнение</h3>
+
+						<p class="jewelry-content__text">
+							Используем банковское золото для производства изделий
+							с 585, 750 пробой золота и серебро 925, а камни только высшего качества. Камни сидят прочно, так как наши ювелиры с 20-летним стажем продумывают дизайн до мелочей и точно исполняют его.</p>
+					</div>
+				</div>
+
+				<div class="col-11 col-sm-9 col-md-5 col-lg-5 col-xl-5 jewelry-img">
+					<img src="images/Jewelry/img4.png" alt="img4">
+				</div>
+			</div>
+
+			<div class="row media-jewelry">
+				<div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-7 jewerlry-wrapper">
+					<div class="jewelry-content">
+						<h3 class="jewelry-content__title">Подлинный металл и качественное исполнение</h3>
+
+						<p class="jewelry-content__text">
+							Используем банковское золото для производства изделий
+							с 585, 750 пробой золота и серебро 925, а камни только высшего качества. Камни сидят прочно, так как наши ювелиры с 20-летним стажем продумывают дизайн до мелочей и точно исполняют его.</p>
+					</div>
+				</div>
+
+				<div class="col-11 col-sm-9 col-md-5 col-lg-5 col-xl-5 jewelry-img">
+					<img src="images/Jewelry/img5.png" alt="img5">
+				</div>
+			</div>
+
+			<div class="row media-jewelry jewelry-reverse">
+				<div class="col-11 col-sm-9 col-md-7 col-lg-7 col-xl-7 jewerlry-wrapper">
+					<div class="jewelry-content">
+						<h3 class="jewelry-content__title">Подлинный металл и качественное исполнение</h3>
+
+						<p class="jewelry-content__text">
+							Используем банковское золото для производства изделий
+							с 585, 750 пробой золота и серебро 925, а камни только высшего качества. Камни сидят прочно, так как наши ювелиры с 20-летним стажем продумывают дизайн до мелочей и точно исполняют его.</p>
+					</div>
+				</div>
+
+				<div class="col-11 col-sm-9 col-md-5 col-lg-5 col-xl-5 jewelry-img">
+					<img src="images/Jewelry/img6.png" alt="img6">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Выберите Свое украшение-->
+	<section class="select_Jewelry">
+		<div class="container container_select">
+			<h2 class="title_site">
+				Выберите Свое украшение <br>
+				из более чем 3 000 моделей
+			</h2>
+
+			<div class="row card_select">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Кольца
+						</div>
+						<img class="scrin_card" src="images/select/img1.png" alt="img1">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Cерьги
+						</div>
+						<img class="scrin_card" src="images/select/img2.png" alt="img2">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Колье
+						</div>
+						<img class="scrin_card" src="images/select/img3.png" alt="img3">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Подвески
+						</div>
+						<img class="scrin_card" src="images/select/img4.png" alt="img4">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Браслеты
+						</div>
+						<img class="scrin_card" src="images/select/img5.png" alt="img5">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Запонки
+						</div>
+						<img class="scrin_card" src="images/select/img6.png" alt="img6">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Значки
+						</div>
+						<img class="scrin_card" src="images/select/img7.png" alt="img7">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Броши
+						</div>
+						<img class="scrin_card" src="images/select/img8.png" alt="img8">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 card_inner">
+					<div class="items_card">
+						<div class="title_card">
+							Зажимы для галстуков
+						</div>
+						<img class="scrin_card" src="images/select/img9.png" alt="img9">
+
+						<a class="card_btn" href="#" data-modal="#fhotocatalog">Получить фотокаталог</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!--Форма Выбор украшения-->
+			<div class="block_forma">
+				<div class="container form_container">
+					<p class="forma_post">Оставляйте заявку, и мы в течение 5 минут отправим Вам фотокатолог,<br>
+						а также подарим <span class="select_form_spaan">скидку 35%</span> на украшение</p>
+
+					<form action="#">
+						<div class="row media-form">
+							<div class="col-sm-8 col-md-3 col-lg-3 col-xl-3">
+								<input type="hidden" name="title" value="Форма выбор украшения">
+								<input class="input_select" type="text" placeholder="Ваше имя">
+							</div>
+							<div class="col-sm-8 col-md-3 col-lg-3 col-xl-3">
+								<input class="input_select" type="email" placeholder="Ваш e-mail" required>
+							</div>
+							<div class="col-sm-8 col-md-3 col-lg-3 col-xl-3">
+								<input class="input_select" type="tel" placeholder="Ваш телефон">
+							</div>
+							<div class="col-sm-8 col-md-3 col-lg-3 col-xl-3">
+								<button class="forma_select_btn">Получить скидку</button>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Изготовим ювелирное украшение под заказ-->
+	<section class="making_section">
+		<div class="container container_making">
+
+			<h2 class="title_site">
+				Изготовим ювелирное украшение под заказ
+			</h2>
+
+			<div class="row making_inner">
+				<div class="col-12 col-sm-9 col-md-5 col-lg-4 col-xl-4">
+					<div class="card-item">
+						<div class="card-picture">
+							<img class="card-item__img" src="images/making/img1.png" alt="img1">
+							<p class="card-item__title">У Вас есть фото<br> или рисунок украшения, которое Вы желаете?</p>
+						</div>
+
+						<div class="card-content">
+							<p class="card-item__text">Отправьте нам фото или рисунок<br> украшения и мы воссоздадим его для Вас.</p>
+							<a class="card-item__btn" href="#">Отправить фото изделия</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-9 col-md-5 col-lg-4 col-xl-4">
+					<div class="card-item">
+						<div class="card-picture">
+							<img class="card-item__img" src="images/making/img2.png" alt="img2">
+							<p class="card-item__title">Выберите украшение<br> из нашего<br>
+								каталога и измените<br> его на свой вкус</p>
+						</div>
+
+						<div class="card-content">
+							<p class="card-item__text">Можно поменять металл, добавить<br> надпись, убрать или вставить камень.</p>
+							<a class="card-item__btn" href="#">Отправить фото изделия</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-9 col-md-5 col-lg-4 col-xl-4">
+					<div class="card-item">
+						<div class="card-picture">
+							<img class="card-item__img" src="images/making/img3.png" alt="img3">
+							<p class="card-item__title">Создайте свое уникальное украшение вместе с нами<br>и подчеркните свою красоту</p>
+						</div>
+
+						<div class="card-content">
+							<p class="card-item__text">Наш ювелир-модельер поможет<br>
+								создать Ваше идеальное украшение.</p>
+							<a class="card-item__btn" href="#">Отправить фото изделия</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!--Воспользуйтесь нашими услугами -->
+	<section class="services">
+		<div class="container">
+			<h2 class="title_site">
+				Воспользуйтесь нашими услугами
+			</h2>
+
+			<div class="row services-wrapper">
+				<div class="col-sm-11 col-md-9 col-lg-7 col-xl-7">
+					<img class="services__img" src="images/services/img1.png" alt="img1">
+				</div>
+
+				<div class="col-sm-11 col-md-9 col-lg-5 col-xl-5">
+					<div class="services-items">
+						<h3 class="services-items__title">Онлайн примерка </h3>
+						<p class="services-items__text">Этот сервис поможет оценить красоту выбранного украшения,
+							и понять как будет смотреться оно на Вас. Используя видеосвязь в скайпе, ватсапа или вайбера, мы покажем, как выбранные изделия смотрятся на живом человеке и подскажем с выбором украшения.</p>
+
+						<a class="services-items__btn" href="#">Узнать подробнее</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row services-wrapper">
+				<div class="col-sm-11 col-md-9 col-lg-7 col-xl-7">
+					<img class="services__img" src="images/services/img2.png" alt="img2">
+				</div>
+
+				<div class="col-sm-11 col-md-9 col-lg-5 col-xl-5">
+					<div class="services-items">
+						<h3 class="services-items__title">Защита изделий родием </h3>
+						<p class="services-items__text">Покроем Ваше украшение белым или черным родием, что защитит изделие от мелких царапин и потертостей — сделает его более износостойким. А холодный блеск покрытия добавит Вашему украшению нотку элегантности.</p>
+
+						<a class="services-items__btn" href="#">Узнать подробнее</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row services-wrapper">
+				<div class="col-sm-11 col-md-9 col-lg-7 col-xl-7">
+					<img class="services__img" src="images/services/img3.png" alt="img3">
+				</div>
+
+				<div class="col-sm-11 col-md-9 col-lg-5 col-xl-5">
+					<div class="services-items">
+						<h3 class="services-items__title">Полировка и чистка </h3>
+						<p class="services-items__text">Восстановим гладкость и блеск Вашего украшения
+							с помощью чистки и полировки. Чисткой уберем царапины
+							и шероховатости, а полировкой
+							придадим ему сияющий блеск.</p>
+
+						<a class="services-items__btn" href="#">Узнать подробнее</a>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!--Акция! Получите сертификат на второе изделие в подарок-->
+	<div class="stock">
+		<div class="container">
+			<div class="row stock-media">
+				<div class="col-md-10 col-lg-8 col-xl-8 stock-left">
+					<div class="stock-content">
+						<div class="stock-title">Акция! Получите сертификат на второе изделие в подарок</div>
+
+						<p class="stock_text">Закажите ювелирное украшения из нашего фотокаталога и получите сертификат<br> на второе изделие в подарок</p>
+
+						<div class="timer-stock">
+							<p class="timer-stock__text">До конца акции осталось:</p>
+
+							<div class="countdown">
+								<div class="countdown__time">
+									<div class="inner-countdown" id="days">01</div>
+									<small>день</small>
+								</div>
+
+								<div class="countdown__time">
+									<div class="inner-countdown" id="hours">05</div>
+									<small>час</small>
+								</div>
+
+								<div class="countdown__time">
+									<div class="inner-countdown" id="minutes">12</div>
+									<small>мин</small>
+								</div>
+
+								<div class="countdown__time">
+									<div class="inner-countdown" id="seconds">33</div>
+									<small>сек</small>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!--Форма Получите сертификат на второе изделие в подарок-->
+				<div class="col-md-10 col-lg-4 col-xl-4 stock-right">
+					<form action="#">
+						<div class="stock-right__title">Заполните форму,</div>
+						<p class="stock-right__text">и получите на Вашу почту фотокаталог и сертификат<br> на второе изделье в подарок</p>
+
+						<input type="hidden" name="title" value="Форма Получите сертификат на второе изделие в подарок">
+						<input class="stock-right__input" type="text" placeholder="Ваше имя">
+						<input class="stock-right__input" type="email" placeholder="Ваш e-mail" required>
+						<input class="stock-right__input" type="tel" placeholder="Ваш телефон" required>
+						<button class="stock-right__btn">Получить сертификат</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--От идеи к готовому украшению — видео о создании наших изделий-->
+	<section class="video">
+		<div class="container">
+			<h2 class="title_site">
+				От идеи к готовому украшению — <br>видео о создании наших изделий
+			</h2>
+			<div class="row video__wrapper">
+				<div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8">
+					<video class="video-items" poster="images/video.png" controls preload="none">
+						<source src="video/set.mp4">
+					</video>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Программа лояльности-->
+	<section class="loyalty">
+		<h2 class="title_site">
+			Программа лояльности
+		</h2>
+
+		<div class="loyalty-wrapper">
+			<div class="container">
+				<div class="row loyalty-media">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="loyalty-items media-items-left">
+							<div class="loyalty-items__title">Дисконтные карты до 10% <br>для наших клиентов</div>
+
+							<a class="loyalty-items__btn active" href="#">Получите карту</a>
+
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="loyalty-items media-items-right">
+							<div class="loyalty-items__title">Дарим 20% скидки на день рождение, юбилей, годовщину</div>
+
+							<a class="loyalty-items__btn" href="#">Получить скидку</a>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!--Наши сертификаты и награды-->
+	<section class="awards">
+		<div class="container">
+			<h2 class="title_site">
+				Наши сертификаты и награды
+			</h2>
+
+			<div class="row owl-carousel slider1">
+				<div class="col">
+					<div class="awards-card">
+						<img class="awards-card_img" src="images/awards/img1.png" alt="img1">
+
+						<p class="awards-card_title">Диплом за успешное участие в 7 международной выставке</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="awards-card">
+						<img class="awards-card_img" src="images/awards/img2.png" alt="img2">
+
+						<p class="awards-card_title">Диплом за успешное участие в 7 международной выставке</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="awards-card">
+						<img class="awards-card_img" src="images/awards/img3.png" alt="img3">
+
+						<p class="awards-card_title">Диплом за успешное участие в 7 международной выставке</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="awards-card">
+						<img class="awards-card_img" src="images/awards/img4.png" alt="img4">
+
+						<p class="awards-card_title">Диплом за успешное участие в 7 международной выставке</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="awards-card">
+						<img class="awards-card_img" src="images/awards/img1.png" alt="img1">
+
+						<p class="awards-card_title">Диплом за успешное участие в 7 международной выставке</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="awards-card">
+						<img class="awards-card_img" src="images/awards/img2.png" alt="img2">
+
+						<p class="awards-card_title">Диплом за успешное участие в 7 международной выставке</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-sm-7 col-md-5 col-lg-4 col-xl-4 adwards-arrow">
+				<button class="adwards-arrow__btn" id="slider1_left">
+					<img src="images/awards/arrow-left.png" alt="left-arrow">
+				</button>
+				<div class="dots-container"></div>
+				<button class="adwards-arrow__btn" id="slider1_right">
+					<img src="images/awards/arrow-right.png" alt="right-arrow">
+				</button>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Отзывы наших клиентов-->
+	<section class="reviews">
+		<div class="container container-reviews">
+			<h2 class="title_site">
+				Отзывы наших клиентов
+			</h2>
+			<div class="owl-carousel slider2">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-3 col-xl-3">
+						<div class="reviews-img">
+							<img class="reviews-img__scrin" src="images/reviews/img1.png" alt="img1">
+
+							<div class="reviews-img__name">
+								Швец Алина
+							</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-7 col-xl-7">
+						<div class="reviews__text">
+							<p>Я давно хотела иметь какое-нибудь украшение чтобы оно было индивидуальное и ни у кого не повторялось. Узнав о том что ювелирный магазин «Диамант» предлагает такие услуги:</p>
+							<p>- цены от производителя; - бесплатные услуги дизайнера; - чистота сплава металла;
+								- гарантийное обслуживание изделий, я решила «рискнуть».</p>
+							<p>Оказалось что это действительно работает, что они выполнили свои обещания, дизайнер учёл все мои пожелания, изделие мне очень понравилось. Я довольна сроками выполнения и качеством работы. Большое спасибо ребятам за их труд.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-3 col-xl-3">
+						<div class="reviews-img">
+							<img class="reviews-img__scrin" src="images/reviews/img2.jpg" alt="img2">
+
+							<div class="reviews-img__name">
+								Швец Алина
+							</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-7 col-xl-7">
+						<div class="reviews__text">
+							<p>Я давно хотела иметь какое-нибудь украшение чтобы оно было индивидуальное и ни у кого не повторялось. Узнав о том что ювелирный магазин «Диамант» предлагает такие услуги: </p>
+							<p>- цены от производителя; - бесплатные услуги дизайнера; - чистота сплава металла;
+								- гарантийное обслуживание изделий, я решила «рискнуть».</p>
+							<p>Оказалось что это действительно работает, что они выполнили свои обещания, дизайнер учёл все мои пожелания, изделие мне очень понравилось. Я довольна сроками выполнения и качеством работы. Большое спасибо ребятам за их труд.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-3 col-xl-3">
+						<div class="reviews-img">
+							<img class="reviews-img__scrin" src="images/reviews/img3.png" alt="img3">
+
+							<div class="reviews-img__name">
+								Швец Алина
+							</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-7 col-xl-7">
+						<div class="reviews__text">
+							<p>Я давно хотела иметь какое-нибудь украшение чтобы оно было индивидуальное и ни у кого не повторялось. Узнав о том что ювелирный магазин «Диамант» предлагает такие услуги: </p>
+							<p>- цены от производителя; - бесплатные услуги дизайнера; - чистота сплава металла;
+								- гарантийное обслуживание изделий, я решила «рискнуть».</p>
+							<p>Оказалось что это действительно работает, что они выполнили свои обещания, дизайнер учёл все мои пожелания, изделие мне очень понравилось. Я довольна сроками выполнения и качеством работы. Большое спасибо ребятам за их труд.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-3 col-xl-3">
+						<div class="reviews-img">
+							<img class="reviews-img__scrin" src="images/reviews/img4.png" alt="img4">
+
+							<div class="reviews-img__name">
+								Швец Алина
+							</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-7 col-xl-7">
+						<div class="reviews__text">
+							<p>Я давно хотела иметь какое-нибудь украшение чтобы оно было индивидуальное и ни у кого не повторялось. Узнав о том что ювелирный магазин «Диамант» предлагает такие услуги: </p>
+							<p>- цены от производителя; - бесплатные услуги дизайнера; - чистота сплава металла;
+								- гарантийное обслуживание изделий, я решила «рискнуть».</p>
+							<p>Оказалось что это действительно работает, что они выполнили свои обещания, дизайнер учёл все мои пожелания, изделие мне очень понравилось. Я довольна сроками выполнения и качеством работы. Большое спасибо ребятам за их труд.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<button class="nav-reviews__btn" id="slider2_left">
+				<img src="images/awards/arrow-left.png" alt="left-arrow">
+			</button>
+
+			<button class="nav-reviews__btn" id="slider2_right">
+				<img src="images/awards/arrow-right.png" alt="right-arrow">
+			</button>
+
+			<div class="col-5 col-sm-3 col-md-2 col-lg-2 col-xl-2 dots-reviews"></div>
+
+		</div>
+	</section>
+
+	<!--Сделать заказ у нас очень просто-->
+	<section class="order">
+		<div class="container">
+			<h2 class="title_site order_title">
+				Сделать заказ у нас очень просто
+			</h2>
+
+			<div class="row media-order">
+				<div class="col-12 col-sm-11 col-md-10 col-lg-6 col-xl-6">
+					<div class="order-card">
+						<img class="order-card__img" src="images/order/img1.png" alt="img1">
+
+						<div class="order-inner">
+							<p>
+								Оставляйте заявку, и наш менеджер перезвонит Вам в течение 15 минут,<br> чтобы проконсультировать Вас.
+							</p>
+							<a class="order-inner__btn" href="#">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-10 col-lg-6 col-xl-6">
+					<div class="order-card">
+						<img class="order-card__img" src="images/order/img2.png" alt="img2">
+
+						<div class="order-inner">
+							<p>
+								Наши ювелиры согласно Вашим пожеланиям подберут или создадут<br>
+								Ваше идеальное украшение.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-10 col-lg-6 col-xl-6">
+					<div class="order-card">
+						<img class="order-card__img" src="images/order/img3.png" alt="img3">
+
+						<div class="order-inner">
+							<p>
+								Далее показываем Вам украшение
+								в магазине или онлайн примерке, либо показываем 3д модель изделия под заказ.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-10 col-lg-6 col-xl-6">
+					<div class="order-card">
+						<img class="order-card__img" src="images/order/img4.png" alt="img4">
+
+						<div class="order-inner">
+							<p>
+								Вносите оплату удобным способом и мы отправляем заказ — через 1-3 дня Вы наслаждаетесь своим новым украшением.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!--Наши контакты-->
+	<section class="contacts">
+		<div class="container">
+
+			<div class="row media-contact">
+				<div class="col-sm-9 col-md-9 col-lg-3 col-xl-3">
+					<h2 class="title_site contacts-title">
+						Наши<br>контакты
+					</h2>
+
+					<ul class="direction-contact">
+						<li>г. Хмельницкий,</li>
+						<li>ул. Соборная, 44/1</li>
+					</ul>
+
+					<ul class="adress-contact">
+						<li>
+							<a href="tel:+380960085357">+380 (96) 008-53-57</a>
+						</li>
+						<li>
+							<a href="mailto:tmdiamantjewelry@gmail.com">tmdiamantjewelry@gmail.com</a>
+						</li>
+					</ul>
+
+					<div class="contacts-text">
+						<div class="contacts-text__title">Остались вопросы?</div>
+						<p>Мы перезвоним в течение<br>
+							15 минут, чтобы ответить<br>
+							на все Ваши вопросы</p>
+						<a class="title_header contact_header" href="#" data-modal="#jewelry">Давайте мы перезвоним</a>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-11 col-lg-9 col-xl-9">
+					<div id="map"></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Footer-->
+	<footer>
+		<div class="container">
+			<div class="row footer-media">
+				<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+					<div class="logo_header">
+						<a href="#">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 footer_config">
+					<a href="#">Политика конфиденциальности</a>
+					<p>&copy; 2020 Производство ювелирных украшений “DIAMANT”<br>
+						Все права защищены</p>
+				</div>
+
+				<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 footer_project">
+					<p>Проект разработан:</p>
+					<a href="#">КнБ Studio</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!--Путь к папке-->
+	<script src="js/jQuery.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/script.js"></script>
+	<script src="owlcarousel/dist/owl.carousel.min.js"></script>
+
+	<!--Скрипт карты-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2YaUn0CnnsHi7-pMS9m8QjwQYCnFuACs&callback=initMap" async defer>
+	</script>
+
+</body></html>

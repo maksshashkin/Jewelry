@@ -1,0 +1,1731 @@
+body {
+	font-family: sans-serif;
+	overflow: hidden
+}
+
+body.no-scroll {
+	position: fixed;
+	width: 100%;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+
+}
+
+.title_site {
+	font-size: 36px;
+	font-weight: bold;
+	font-family: none;
+	text-align: center;
+
+}
+
+/*Шапка*/
+header {
+	display: flex;
+	align-items: center;
+	min-height: 10vh;
+	padding: 20px 0px;
+	
+}
+
+.flex_header {
+	align-items: center;
+	
+}
+
+.text_header {
+	color: rgb(21, 21, 21);
+	line-height: 1.5;
+	word-spacing: 7px
+}
+
+.inform_header {
+	font-weight: bold;
+	text-align: right;
+}
+
+.inform_header span {
+	font-family: none;
+	font-weight: bold;
+	margin-right: 10px
+}
+
+.tel_header {
+	color: rgb(21, 21, 21);
+	font-size: 20px;
+	font-family: none;
+	letter-spacing: 2px;
+	margin-left: 10px
+}
+
+.header_title_wrap {
+	text-align: center;
+
+}
+
+.title_header {
+	font-size: 14px;
+	color: #000;
+	font-family: none;
+	font-weight: bold;
+	border: 2px solid #000;
+	border-top: 0;
+	width: 100%;
+	display: block;
+	padding: 15px 0px;
+	letter-spacing: 1px;
+
+
+}
+
+.title_header:hover {
+	background: #9a1041;
+	transition: .8s;
+	color: #fff;
+
+}
+
+/*Бургер*/
+.burger_menu {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 35px;
+	height: 35px;
+	border: 0;
+	padding: 0;
+	background: 0;
+	display: none;
+
+}
+
+.burger_menu:focus {
+	outline: 0;
+}
+
+.burger_item {
+	position: relative;
+	width: 100%;
+	height: 4px;
+	display: inline-block;
+	background: #000;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: .7s
+}
+
+.burger_menu:before,
+.burger_menu:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 4px;
+	background: #000;
+	transition: .7s;
+}
+
+.burger_menu:after {
+	bottom: 0;
+	left: 0
+}
+
+.burger_menu:before {
+	top: 0
+}
+
+.burger_menu.active .burger_item {
+	background: transparent;
+}
+
+.burger_menu.active.burger_menu:before {
+	top: 13px;
+	transform: rotate(45deg);
+}
+
+.burger_menu.active.burger_menu:after {
+	top: 13px;
+	transform: rotate(-45deg);
+}
+
+.burger-menu-list {
+	display: flex;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	transition: 1s;
+	bottom: 0
+}
+
+
+
+/*Intro*/
+.intro_woman {
+	background: url(../images/BG.png)no-repeat center;
+	min-height: 90vh;
+	background-size: cover;
+
+}
+
+.title_intro {
+	font-size: 57px;
+	font-family: "Prata";
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+	margin: 50px 0px 20px;
+	letter-spacing: 2px;
+	word-spacing: 4px
+}
+
+.intro_list {
+	list-style: none;
+	font-family: none;
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 40px
+}
+
+.intro_list li {
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	word-spacing: 4px
+}
+
+.intro_list li:before {
+	content: "";
+	width: 13px;
+	height: 13px;
+	border: 2px solid red;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 15px;
+
+}
+
+.intro_btn {
+	width: 70%;
+	height: 60px;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: none;
+	letter-spacing: 1px;
+	word-spacing: 4px
+}
+
+.intro_btn:hover {
+	background: #9a1041;
+	color: #fff;
+	transition: .7s;
+}
+
+.popup-wrapper__forma {
+	margin: 30px 0px 0px;
+	padding: 45px 80px;
+	background: #000;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px -1px 10px 0px #585858
+}
+
+.site-cross_btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 35px;
+	height: 35px;
+	font-size: 30px;
+	color: #646464;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.site-cross_btn:hover {
+	color: darkred;
+	transition: .6s;
+}
+
+.intro-forma {
+	position: relative;
+	z-index: 3;
+	transition: .6s;
+	display: none
+}
+
+.intro-forma.show {
+	display: flex
+}
+
+.intro-forma:before {
+	position: fixed;
+	content: "";
+	background: rgba(0, 0, 0, .9);
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	cursor: pointer;
+
+}
+
+
+
+/*Ювелирный магазин «Диамант»*/
+.Jewelry {
+	position: relative;
+
+}
+
+.jewelry_title {
+	margin-bottom: 50px
+}
+
+.Jewelry:before {
+	position: absolute;
+	content: "";
+	background: url(../images/women.png) no-repeat center;
+	background-size: cover;
+	width: 950px;
+	height: 1800px;
+	right: 0;
+	bottom: 0;
+	display: block;
+
+}
+
+.jewelry-reverse {
+	flex-direction: row-reverse
+}
+
+.jewerlry-wrapper {
+	position: relative;
+	padding: 0;
+	z-index: 1
+}
+
+.jewelry-content {
+	background: #f5f7fa;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	padding: 60px 70px 110px;
+	text-align: center
+}
+
+.jewelry-content__title {
+	font-size: 24px;
+	font-family: none;
+	margin: 50px 0px;
+	position: relative
+}
+
+.jewelry-content:before {
+	position: absolute;
+	content: "";
+	width: 480px;
+	height: 2px;
+	background: red;
+	top: 50px
+}
+
+.jewelry-content:after {
+	position: absolute;
+	content: "";
+	width: 480px;
+	height: 2px;
+	background: red;
+	bottom: 50px;
+
+}
+
+.jewelry-content__text {
+	line-height: 27px;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	height: 130px;
+
+}
+
+.jewelry-img {
+	padding: 0;
+	z-index: 1
+}
+
+.jewelry-img img {
+	width: 100%;
+	height: 600px;
+	display: block;
+}
+
+
+
+/*Выберите Свое украшение*/
+.select_Jewelry {
+	background: url(../images/Rectangle%2017.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: -180px
+}
+
+.container_select {
+	margin-top: 20%;
+
+}
+
+.card_select {
+	margin-top: 80px;
+
+}
+
+.card_inner {
+	margin-bottom: 35px
+}
+
+.items_card {
+	width: 100%;
+	min-height: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 48px 35px 32px;
+	box-shadow: 0px 4px 13px 0px rgba(193, 162, 139, 0.48);
+
+
+}
+
+.scrin_card {
+	display: block;
+	width: 330px;
+	max-height: 330px;
+	border: 3px solid #f8f4f1
+}
+
+.title_card {
+	font-size: 24px;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+}
+
+.card_btn {
+	margin-top: 30px;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #000;
+	border: 3px solid #000;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.card_btn:hover {
+	background: #9a1041;
+	color: #fff;
+	border: 3px solid #9a1041;
+	transition: .6s;
+}
+
+/*Форма выбор украшения*/
+.block_forma {
+	background: #000;
+	margin-top: 25px;
+	padding-bottom: 70px;
+
+}
+
+.select_form_spaan {
+	color: #9a1041;
+	position: relative
+}
+
+.select_form_spaan:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #9a1041;
+	display: block;
+	right: 0;
+
+}
+
+.forma_post {
+	color: #f8f4f1;
+	text-align: center;
+	font-size: 24px;
+	padding: 70px 0px 35px;
+	font-family: none;
+	line-height: 30px
+}
+
+.input_select {
+	width: 100%;
+	height: 55px;
+	padding-left: 20px;
+}
+
+.input_select::placeholder {
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+
+}
+
+.input_select:focus {
+	outline: 0
+}
+
+.forma_select_btn {
+	width: 100%;
+	height: 55px;
+	background: #9a1041;
+	text-transform: uppercase;
+	color: #fff;
+	border: 0
+}
+
+.forma_select_btn:hover {
+	background: #848484;
+	transition: .6s;
+	font-weight: bold;
+}
+
+/*Изготовим ювелирное украшение под зака*/
+.making_section {
+	background: url(../images/making/BG.png) no-repeat center;
+	background-size: cover;
+	margin-top: -15%;
+	padding-bottom: 250px
+}
+
+.container_making {
+	padding-top: 20%
+}
+
+.making_inner {
+	padding: 50px 0px;
+}
+
+.card-item {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%
+}
+
+.card-picture {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.card-picture:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .6)
+}
+
+.card-item__img {
+	display: block;
+	max-height: 370px;
+	width: 100%
+}
+
+.card-item__title {
+	position: absolute;
+	top: 0;
+	color: #fff;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0px 60px;
+	line-height: 33px;
+	font-family: none;
+}
+
+.card-item__text {
+	line-height: 28px;
+	height: 100%;
+
+}
+
+.card-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.card-item__btn {
+	width: 100%;
+	height: 75px;
+	background: #9a1041;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+
+}
+
+.card-item__btn:hover {
+	background: #848484;
+	transition: .6s;
+	font-weight: bold;
+	color: #000
+}
+
+
+/*Воспользуйтесь нашими услугами*/
+.services {
+	background: url(../images/Rectangle%2018.png) no-repeat;
+	padding: 250px 0px 300px;
+	margin-top: -16%;
+	background-size: cover;
+
+}
+
+.services-wrapper {
+	margin: 50px 0px 40px;
+
+}
+
+.services__img {
+	display: block;
+	width: 100%;
+	max-height: 420px;
+}
+
+.services-items {
+	position: absolute;
+	left: -75px;
+	right: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.services-items__title {
+	font-size: 24px;
+	font-family: none;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.services-items__title:before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #9a1041;
+
+}
+
+.services-items__text {
+	font-size: 18px;
+	line-height: 1.417;
+	margin: 30px 0px 10px;
+	overflow: auto;
+	height: 140px
+}
+
+.services-items__btn {
+	width: 320px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #000;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	font-family: none;
+}
+
+.services-items__btn:hover {
+	background: #9a1041;
+	transition: .6s;
+	color: #fff;
+}
+
+
+/*Акция! Получите сертификат на второе изделие в подарок*/
+.stock {
+	margin: 20px 0px 60px
+}
+
+.stock-left {
+	background: url(../images/women3.png) no-repeat 65%;
+	background-size: cover;
+	position: relative
+}
+
+.stock-content {
+	padding: 40px 150px 0px 35px;
+	font-family: none
+}
+
+.stock-title {
+	font-size: 55px;
+	line-height: 58px;
+	word-spacing: 8px
+}
+
+.stock_text {
+	margin-top: 25px;
+	font-size: 24px;
+	line-height: 33px;
+	word-spacing: 7px
+}
+
+.timer-stock {
+	margin-top: 45px
+}
+
+.timer-stock__text {
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.countdown {
+	display: flex;
+	width: 375px;
+	justify-content: space-between;
+	margin: 10px 0px 30px;
+	font-size: 18px
+}
+
+.countdown__time {
+	text-align: center;
+	position: relative
+}
+
+.countdown__time:after {
+	content: '';
+	position: absolute;
+	right: -45px;
+	top: 33%;
+	display: block;
+	font-size: 40px;
+	width: 30px;
+	height: 2px;
+	display: inline-block;
+	background: red;
+}
+
+.countdown__time:last-child:after {
+	display: none;
+}
+
+.countdown__time:last-child {
+	color: red
+}
+
+.inner-countdown {
+	font-size: 50px;
+
+}
+
+
+.stock-right {
+	padding: 60px 60px;
+	font-family: none;
+	color: #fff;
+	background: #000;
+
+}
+
+.stock-right__input {
+	width: 100%;
+	height: 55px;
+	margin-bottom: 5px;
+	padding-left: 25px;
+}
+
+.stock-right__input:focus {
+	outline: 0;
+	border: 3px solid #9a1041;
+}
+
+.stock-right__input::placeholder {
+	font-weight: bold;
+	color: #000;
+	font-family: none;
+	font-size: 16px;
+}
+
+.stock-right__title {
+	font-size: 30px;
+	min-height: 60px
+}
+
+.stock-right__text {
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 50px
+}
+
+.stock-right__btn {
+	width: 100%;
+	height: 55px;
+	background: #9a1041;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: none;
+	word-spacing: 3px;
+	font-size: 13px;
+}
+
+.stock-right__btn:hover {
+	background: #FE2E64;
+	transition: .5s;
+
+}
+
+
+
+
+
+
+
+
+/*От идеи к готовому украшению — видео о создании наших изделий*/
+.video__wrapper {
+	justify-content: center;
+	margin: 50px 0px;
+
+}
+
+.video-items {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+/*Программа лояльности*/
+.loyalty {
+	margin: 20px 0px 30px;
+}
+
+.loyalty-wrapper {
+	background: url(../images/loyalty/loyalty.png) no-repeat center;
+	min-height: 80vh;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+}
+
+.loyalty-items {
+	width: 63%;
+	margin: auto;
+	font-size: 24px;
+	color: #fff;
+	line-height: 1.417;
+	font-family: none;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.loyalty-items__btn {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 45px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	border: 2px solid #fff;
+
+}
+
+.loyalty-items__btn.active {
+	background: #9a1041;
+	border: 2px solid #9a1041
+}
+
+.loyalty-items__btn.active:hover {
+	background: transparent;
+	transition: .6s;
+	border: 2px solid #fff;
+}
+
+.loyalty-items__btn:hover {
+	background: #9a1041;
+	border: 2px solid #fff;
+	transition: .6s;
+}
+
+
+
+/*Наши сертификаты и награды*/
+.slider1 {
+	margin: 60px 0px 0px;
+	overflow: hidden
+}
+
+.awards-card {
+	height: 100%;
+
+}
+
+.awards-card_img {
+	width: 100%;
+	height: 380px;
+	display: block;
+	box-shadow: 0px 4px 13px 0px rgba(193, 162, 139, 0.48);
+}
+
+.awards-card_title {
+	margin-top: 50px;
+	line-height: 1.556;
+	font-size: 18px;
+	font-family: none;
+	font-weight: bold;
+	word-spacing: 5px;
+	text-align: center;
+	height: 100%;
+
+}
+
+.adwards-arrow {
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.adwards-arrow__btn {
+	border: none;
+	background: none;
+}
+
+.adwards-arrow__btn:focus {
+	outline: 0;
+}
+
+.dots-container {
+	display: flex;
+	align-items: center;
+	width: 125px;
+	justify-content: space-between;
+}
+
+.dots-container button {
+	transform: rotate(-135deg);
+	border: 2px solid #000;
+	width: 15px;
+	height: 15px;
+
+}
+
+.dots-container button.active {
+	background: #000;
+}
+
+
+/*Отзывы наших клиентов*/
+.container-reviews {
+	background: url(../images/reviews/BG.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 150px 0px
+}
+
+.slider2 {
+	margin: 20px 0px 40px;
+	padding: 0px 60px;
+
+}
+
+.reviews-img {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px
+}
+
+.reviews-img:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 95px;
+	background: #9a1041;
+	top: -50px;
+
+}
+
+.reviews-img__scrin {
+	display: block;
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	position: relative;
+
+}
+
+.reviews-img__name {
+	font-size: 18px;
+	font-family: none;
+	margin-top: 20px;
+}
+
+.reviews__text {
+	margin-top: 50px;
+	max-height: 360px;
+	overflow: auto
+}
+
+.reviews__text p {
+	line-height: 1.556;
+	font-size: 18px;
+	font-family: none;
+	margin-bottom: 25px
+}
+
+.reviews__text p:nth-child(3) {
+	margin-bottom: 0;
+}
+
+.dots-reviews {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.dots-reviews button {
+	transform: rotate(-135deg);
+	border: 2px solid #000;
+	width: 15px;
+	height: 15px;
+
+}
+
+.dots-reviews button.active {
+	background: #000;
+}
+
+.nav-reviews__btn {
+	width: 50px;
+	height: 50px;
+	border: 0;
+	background: 0;
+	position: absolute;
+	top: 43%;
+	z-index: 2
+}
+
+.nav-reviews__btn:focus {
+	outline: 0;
+}
+
+#slider2_left {
+	left: 10px;
+}
+
+#slider2_right {
+	right: 10px;
+
+}
+
+
+
+/*Сделать заказ у нас очень просто*/
+.order {
+	margin: 50px 0px 40px;
+}
+
+.order-card__img {
+	display: block;
+	width: 100%;
+	min-height: 300px
+}
+
+.order-card {
+	position: relative;
+	margin: 40px 0px 0px;
+	z-index: 1
+}
+
+.order-inner {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 100px;
+	height: 100%;
+	color: #fff;
+	line-height: 1.556;
+	font-size: 18px;
+
+}
+
+.order-inner__btn {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid #fff;
+	margin-top: 30px;
+}
+
+.order-inner__btn:hover {
+	background: #9a1041;
+	transition: .6s;
+
+}
+
+
+/*Наши контакты*/
+.contacts {
+	margin: 80px 0px 50px;
+	position: relative;
+
+}
+
+.contacts-title {
+	text-align: left;
+	margin-bottom: 50px;
+
+}
+
+.direction-contact {
+	line-height: 1.556;
+	font-size: 18px;
+
+}
+
+.adress-contact {
+	line-height: 45px;
+	font-size: 18px;
+	margin: 30px 0px;
+
+}
+
+.adress-contact a {
+	color: #000
+}
+
+.adress-contact a:hover {
+	color: #0000FF;
+	text-decoration: underline;
+
+}
+
+.contacts-text {
+	line-height: 27px;
+	font-size: 18px;
+	word-spacing: 7px;
+
+}
+
+.contacts-text__title {
+	font-size: 24px;
+	margin-bottom: 25px
+}
+
+.contact_header {
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+	z-index: 1;
+	min-height: 100%
+}
+
+
+/*Footer*/
+footer {
+	padding: 42px 0px;
+	position: relative
+}
+
+footer:before {
+	position: absolute;
+	content: "";
+	width: 680px;
+	height: 1500px;
+	background: url(../images/women2.png) no-repeat center;
+	background-size: cover;
+	right: -50px;
+	bottom: 0
+}
+
+.footer_config {
+	text-align: center;
+	color: #888889;
+	font-size: 16px;
+
+}
+
+.footer_project {
+	color: #888889;
+	text-align: end;
+}
+
+footer a {
+	color: #1c68c6;
+	text-decoration: underline;
+}
+
+
+
+
+/*Media*/
+@media screen and (max-width: 1200px) {
+	.title_intro {
+		font-size: 40px
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+	.popup-wrapper__forma {
+		padding: 40px 30px;
+
+	}
+
+	.popup-wrapper__forma {
+		padding: 40px;
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+		top: 12%;
+		width: 50%;
+
+	}
+
+}
+
+@media screen and (max-width: 993px) {
+	.jewelry-img img {
+		height: 400px
+	}
+
+	.media-jewelry {
+		margin-bottom: 60px;
+
+	}
+
+	.Jewelry:before {
+		display: none;
+	}
+
+	.jewelry-content {
+		padding-left: 30px;
+		padding-right: 30px;
+		max-height: 400px;
+		position: relative
+	}
+
+	.jewelry-content:before,
+	.jewelry-content:after {
+		width: 80%
+	}
+
+	.jewelry-content__text {
+		font-size: 16px
+	}
+
+	.text_header {
+		display: none;
+
+	}
+
+	.making_inner {
+		justify-content: space-around;
+
+	}
+
+	.card-item {
+		padding-bottom: 50px
+	}
+
+	.making_section {
+		padding-bottom: 0
+	}
+
+	.services {
+		margin-top: -230px
+	}
+
+	.services-wrapper {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.services-items {
+		position: relative;
+		left: 0;
+		align-items: center;
+		text-align: center;
+		margin: 30px 0px 40px;
+	}
+
+	.services {
+		padding-bottom: 70px
+	}
+
+	.stock-media {
+		justify-content: center;
+
+	}
+
+	.stock-right {
+		text-align: center
+	}
+
+	.media-contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+		text-align: center;
+
+	}
+
+	.contacts-title {
+		text-align: center
+	}
+
+	#map {
+		margin-top: 40px
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.media-order {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.order-inner {
+		text-align: center;
+		padding: 0px 50px
+	}
+
+	.card_btn {
+		font-size: 10px
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.header_title_wrap {
+		display: none;
+
+	}
+
+	.inform_header {
+		position: absolute;
+		right: 0;
+
+	}
+
+	.popup-wrapper__forma {
+		width: 70%
+	}
+
+	.loyalty-items {
+		width: 90%
+	}
+
+	.Jewelry {
+		padding-bottom: 60px
+	}
+
+	footer:before {
+		opacity: .2
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.media-jewelry {
+		justify-content: center
+	}
+
+	.card_select {
+		justify-content: space-around;
+
+	}
+
+	.container_select {
+		margin-top: 200px
+	}
+
+	.scrin_card {
+		width: 100%
+	}
+
+	.making_section {
+		margin-top: -300px
+	}
+
+	.container_making {
+		padding-top: 400px
+	}
+	
+
+	.stock-title {
+		font-size: 35px;
+
+	}
+
+	.stock-content {
+		padding-right: 200px
+	}
+
+	.footer-media {
+		text-align: center;
+
+	}
+
+	.footer_project {
+		text-align: center
+	}
+
+	.footer_config {
+		margin: 15px 0px;
+		line-height: 25px
+	}
+	.media-form {
+		flex-direction: column;
+		align-items: center
+	}
+
+	.media-form input {
+		margin-bottom: 10px;
+		
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.inform_header {
+		display: none;
+	}
+
+
+	.title_intro {
+		font-size: 30px;
+
+	}
+
+	.intro_list {
+		font-size: 15px;
+		width: 75%;
+
+	}
+
+	.intro_list li {
+		display: flex;
+
+	}
+
+	.intro_list li:before {
+		display: table;
+	}
+
+	.intro_btn {
+		width: 90%;
+		font-size: 11px;
+
+	}
+
+	header {
+		position: fixed;
+		width: 100%;
+		background: #fff;
+		z-index: 3;
+		box-shadow: 2px 2px 12px 0px #848484;
+
+	}
+
+	.intro_woman {
+		margin-top: 60px;
+		min-height: 100vh
+	}
+
+	.burger_menu {
+		display: block
+	}
+
+	.burger-menu-list.active {
+		opacity: 1;
+		visibility: visible;
+		position: relative;
+
+	}
+
+	.burger-menu-list {
+		background: url(../images/Rectangle%2017.png)no-repeat;
+		background-size: cover;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		justify-content: center;
+
+	}
+
+	.burger-menu-list li {
+		margin-bottom: 15px;
+		font-weight: bold
+	}
+
+	.burger-menu__btn {
+		width: 300px;
+		height: 50px;
+		background: #9a1041;
+		text-transform: uppercase;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+
+	}
+
+	.popup-wrapper__forma {
+		width: 85%
+	}
+
+	.jewelry-content__title {
+		margin-bottom: 25px
+	}
+
+	.title_site {
+		font-size: 25px
+	}
+
+	.services-items__text {
+		margin-bottom: 30px;
+		height: 150px
+	}
+
+	.stock-left:before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .7);
+		left: 0;
+
+	}
+
+	.stock-content {
+		padding-right: 30px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		position: relative;
+	}
+
+	.inner-countdown {
+		font-size: 30px;
+	}
+
+	.countdown {
+		width: 300px;
+
+	}
+
+	.stock-title {
+		line-height: 35px
+	}
+
+	.loyalty-media {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px
+	}
+
+	.loyalty-wrapper {
+		background: 0;
+
+	}
+
+	.loyalty-items {
+		margin-bottom: 30px
+	}
+
+	.media-items-left {
+		background: url(../images/loyalty/mobile1.png) no-repeat center;
+		min-height: 350px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+
+	.media-items-right {
+		background: url(../images/loyalty/mobile2.png) no-repeat center;
+		min-height: 350px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.loyalty-items__btn {
+		width: 90%
+	}
+
+	.loyalty-items__title {
+		width: 90%
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+	.title_intro {
+		font-size: 25px
+	}
+
+	.intro_btn {
+		font-size: 10px;
+		width: 100%
+	}
+
+	.intro_list {
+		width: 85%;
+		margin-bottom: 25px
+	}
+
+	.intro_woman {
+		background: url(../images/mobile.png) 80% no-repeat;
+		background-size: cover
+	}
+
+	.popup-wrapper__forma {
+		width: 95%;
+		padding: 50px 20px;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 2%
+	}
+
+	.reviews__text {
+		text-align: center;
+		height: 190px
+	}
+
+	.order-inner {
+		padding: 0px 35px
+	}
+
+	.stock-content {
+		padding: 20px 0px
+	}
+
+	.stock-right {
+		padding: 50px 10px
+	}
+
+	.stock_text {
+		font-size: 19px
+	}
+	.stock-content {
+		padding: 60px 0px 30px
+	}
+}
+
+
+@media screen and (max-width: 355px) {
+	.title_intro {
+		font-size: 20px;
+		font-weight: bold
+	}
+
+	.order-inner {
+		text-align: center;
+		padding: 0px 20px;
+		text-shadow: 1px -1px 2px #000
+	}
+
+	.services-items__btn {
+		width: 95%
+	}
+	.burger_menu {
+		width: 28px;
+		height: 28px
+	}
+
+}
