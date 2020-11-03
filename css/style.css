@@ -32,12 +32,12 @@ header {
 	align-items: center;
 	min-height: 10vh;
 	padding: 20px 0px;
-	
+
 }
 
 .flex_header {
 	align-items: center;
-	
+
 }
 
 .text_header {
@@ -457,6 +457,10 @@ header {
 	transition: .6s;
 }
 
+.row.slider3 {
+	display: none
+}
+
 /*Форма выбор украшения*/
 .block_forma {
 	background: #000;
@@ -826,11 +830,6 @@ header {
 	transition: .5s;
 
 }
-
-
-
-
-
 
 
 
@@ -1437,7 +1436,7 @@ footer a {
 	.container_making {
 		padding-top: 400px
 	}
-	
+
 
 	.stock-title {
 		font-size: 35px;
@@ -1461,6 +1460,7 @@ footer a {
 		margin: 15px 0px;
 		line-height: 25px
 	}
+
 	.media-form {
 		flex-direction: column;
 		align-items: center
@@ -1468,7 +1468,7 @@ footer a {
 
 	.media-form input {
 		margin-bottom: 10px;
-		
+
 	}
 }
 
@@ -1651,6 +1651,35 @@ footer a {
 		width: 90%
 	}
 
+	.card_select {
+		display: none;
+	}
+
+	.row.slider3 {
+		display: flex;
+		margin: 30px 0px 0px
+	}
+
+	.dots-slider3 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px
+	}
+
+	.dots-slider3 button {
+		transform: rotate(-135deg);
+		border: 2px solid #000;
+		width: 15px;
+		height: 15px;
+		margin: 10px
+	}
+
+	.dots-slider3 button.active {
+		background: #000;
+	}
+	.select_Jewelry {
+		margin-top: -240px
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -1702,6 +1731,7 @@ footer a {
 	.stock_text {
 		font-size: 19px
 	}
+
 	.stock-content {
 		padding: 60px 0px 30px
 	}
@@ -1723,6 +1753,7 @@ footer a {
 	.services-items__btn {
 		width: 95%
 	}
+
 	.burger_menu {
 		width: 28px;
 		height: 28px
