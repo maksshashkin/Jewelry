@@ -71,6 +71,38 @@ $(function () {
 	$('#slider2_right').click(function () {
 		Slider2.trigger('next.owl.carousel');
 	})
+	
+	
+	
+	/* Slider 3*/
+	const Slider3 = $(".slider3");
+	Slider3.owlCarousel({
+		smartSpeed: 2000,
+		autoplay: true,
+		autoplayTimeout: 8000,
+		autoplayHoverPause: true,
+		loop: true,
+		dotsContainer: ('.dots-slider3'),
+		dotsEach: true,
+		responsive: {
+			0: {
+				items: 1,
+				dotsEach: 4,
+				
+			},
+			400: {
+				items: 1,
+				dotsEach: 2,
+				stagePadding: 50,
+			},
+			585: {
+				items: 1,
+				dotsEach: 2,
+			},
+			
+		}
+	});
+
 
 
 	/* Modal-popup */
