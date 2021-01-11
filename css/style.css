@@ -116,8 +116,6 @@ header {
 	height: 4px;
 	display: inline-block;
 	background: #000;
-	top: 50%;
-	transform: translateY(-50%);
 	transition: .7s
 }
 
